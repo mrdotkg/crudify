@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Product;
-use function MongoDB\BSON\toJSON;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -12,9 +12,10 @@ use Symfony\Component\HttpFoundation\Response;
 class ProductController extends Controller
 {
     /**
-     * @Route("/product", name="product")
+     * @Route("/product", name="product_create")
+     * @Method({"PUT"})
      */
-    public function index()
+    public function create()
     {
         // you can fetch the EntityManager via $this->getDoctrine()
         // or you can add an argument to your action: index(EntityManagerInterface $em)
@@ -36,6 +37,9 @@ class ProductController extends Controller
 
     /**
      * @Route("/product/{id}", name="product_show")
+     * @Method({"GET"})
+     * @param $id
+     * @return JsonResponse
      */
     public function show($id)
     {
@@ -57,7 +61,8 @@ class ProductController extends Controller
     }
 
     /**
-     * @Route("/product/edit/{id}")
+     * @Route("/product/{id}")
+     * @Method({"POST"})
      */
     public function update($id)
     {
@@ -80,6 +85,7 @@ class ProductController extends Controller
 
     /**
      * @Route("product/greater-than-price/{price}")
+     * @Method({"GET"})
      * @param $price
      * @return JsonResponse
      */
@@ -96,10 +102,13 @@ class ProductController extends Controller
         }
 
         return new JsonResponse(json_encode($products));
-
     }
+
     /**
-     * @Route("/product/delete/{id}")
+     * @Route("/product/{id}")
+     * @Method({"DELETE"})
+     * @param $id
+     * @return Response
      */
     public function delete($id)
     {
