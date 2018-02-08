@@ -16,7 +16,6 @@ class HomeController
 {
     /**
      * @return Response
-     *
      */
     public function index()
     {
