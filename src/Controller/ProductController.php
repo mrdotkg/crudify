@@ -22,7 +22,7 @@ class ProductController extends Controller
             ->getRepository(Product::class)
             ->findEverything();
 
-        return new JsonResponse(json_encode($product));
+        return new JsonResponse($product);
     }
 
     /**
@@ -43,11 +43,7 @@ class ProductController extends Controller
             );
         }
 
-        return new JsonResponse(json_encode($product->value()));
-
-        // or render a template
-        // in the template, print things with {{ product.name }}
-        // return $this->render('product/show.html.twig', ['product' => $product]);
+        return new JsonResponse($product->value());
     }
 
     /**
@@ -106,7 +102,7 @@ class ProductController extends Controller
             ->getRepository(Product::class)
             ->findAllGreaterThanPrice($price);
 
-        return new JsonResponse(json_encode($products));
+        return new JsonResponse($products);
     }
 
     /**
@@ -121,6 +117,7 @@ class ProductController extends Controller
         $product = $em->getRepository(Product::class)->find($id);
         $em->remove($product);
         $em->flush();
+
         return new Response('You ust deleted prudct with id: ' . $id);
     }
 

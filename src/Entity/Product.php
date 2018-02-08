@@ -9,12 +9,43 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Product
 {
+    /**___________________________________________________________________________________
+     * ||
+     * ||           entity columns
+     * ||_________________________________________________________________________________
+     */
+
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
     private $id;
+
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $name;
+
+    /**
+     * @ORM\Column(type="decimal", scale=2, nullable=true)
+     */
+    private $price;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $description;
+
+    /**
+     * @return array
+     */
+
+    /**___________________________________________________________________________________
+     * ||
+     * ||           getters and setters
+     * ||_________________________________________________________________________________
+     */
 
     /**
      * @return mixed
@@ -72,24 +103,13 @@ class Product
         $this->description = $description;
     }
 
-    /**
-     * @ORM\Column(type="string", length=100)
+    /**___________________________________________________________________________________
+     * ||
+     * ||           extra functions
+     * ||_________________________________________________________________________________
      */
-    private $name;
 
-    /**
-     * @ORM\Column(type="decimal", scale=2, nullable=true)
-     */
-    private $price;
 
-    /**
-     * @ORM\Column(type="text")
-     */
-    private $description;
-
-    /**
-     * @return array
-     */
     public function value()
     {
         return array(
