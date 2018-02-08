@@ -12,6 +12,20 @@ use Symfony\Component\HttpFoundation\Response;
 class ProductController extends Controller
 {
     /**
+     * @Route("/product", name="product_show_all")
+     * @Method({"GET"})
+     * @return JsonResponse
+     */
+    public function index()
+    {
+        $product = $this->getDoctrine()
+            ->getRepository(Product::class)
+            ->findEverything();
+
+        return new JsonResponse(json_encode($product));
+    }
+
+    /**
      * @Route("/product/{id}", name="product_show")
      * @Method({"GET"})
      * @param $id
@@ -59,6 +73,7 @@ class ProductController extends Controller
 
         return new Response('Saved new product with id ' . $product->getId());
     }
+
 
     /**
      * @Route("/product/{id}")

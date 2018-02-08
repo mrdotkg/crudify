@@ -14,18 +14,21 @@ class ProductRepository extends ServiceEntityRepository
         parent::__construct($registry, Product::class);
     }
 
-    /*
-    public function findBySomething($value)
+    /**
+     * @param $value
+     * @return mixed
+     */
+    public function findEverything()
     {
         return $this->createQueryBuilder('p')
-            ->where('p.something = :value')->setParameter('value', $value)
-            ->orderBy('p.id', 'ASC')
+//            ->where('p.something = :value')->setParameter('value', $value)
+//            ->orderBy('p.id', 'ASC')
             ->setMaxResults(10)
             ->getQuery()
-            ->getResult()
+            ->getResult(Query::HYDRATE_ARRAY )
         ;
     }
-    */
+
     /**
      * @param $price
      * @return Product[]
