@@ -76,7 +76,7 @@ class ProductController extends Controller
 
 
     /**
-     * @Route("/product/{id}", "name=product_update")
+     * @Route("/product/{id}", name="product_update")
      * @Method({"POST"})
      * @param $id
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
@@ -95,7 +95,7 @@ class ProductController extends Controller
     }
 
     /**
-     * @Route("product/greater-than-price/{price}", "name=product_gt_p")
+     * @Route("product/greater-than-price/{price}", name="product_gt_p")
      * @Method({"GET"})
      * @param $price
      * @return JsonResponse
@@ -110,7 +110,7 @@ class ProductController extends Controller
     }
 
     /**
-     * @Route("/product/{id}", "name=product_delete")
+     * @Route("/product/{id}", name="product_delete")
      * @Method({"DELETE"})
      * @param $id
      * @return Response
