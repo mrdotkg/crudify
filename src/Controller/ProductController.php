@@ -12,30 +12,6 @@ use Symfony\Component\HttpFoundation\Response;
 class ProductController extends Controller
 {
     /**
-     * @Route("/product", name="product_create")
-     * @Method({"PUT"})
-     */
-    public function create()
-    {
-        // you can fetch the EntityManager via $this->getDoctrine()
-        // or you can add an argument to your action: index(EntityManagerInterface $em)
-        $em = $this->getDoctrine()->getManager();
-
-        $product = new Product();
-        $product->setName('Keyboard');
-        $product->setPrice(19.99);
-        $product->setDescription('Ergonomic and stylish!');
-
-        // tell Doctrine you want to (eventually) save the Product (no queries yet)
-        $em->persist($product);
-
-        // actually executes the queries (i.e. the INSERT query)
-        $em->flush();
-
-        return new Response('Saved new product with id ' . $product->getId());
-    }
-
-    /**
      * @Route("/product/{id}", name="product_show")
      * @Method({"GET"})
      * @param $id
@@ -58,6 +34,30 @@ class ProductController extends Controller
         // or render a template
         // in the template, print things with {{ product.name }}
         // return $this->render('product/show.html.twig', ['product' => $product]);
+    }
+
+    /**
+     * @Route("/product", name="product_create")
+     * @Method({"PUT"})
+     */
+    public function create()
+    {
+        // you can fetch the EntityManager via $this->getDoctrine()
+        // or you can add an argument to your action: index(EntityManagerInterface $em)
+        $em = $this->getDoctrine()->getManager();
+
+        $product = new Product();
+        $product->setName('Keyboard');
+        $product->setPrice(19.99);
+        $product->setDescription('Ergonomic and stylish!');
+
+        // tell Doctrine you want to (eventually) save the Product (no queries yet)
+        $em->persist($product);
+
+        // actually executes the queries (i.e. the INSERT query)
+        $em->flush();
+
+        return new Response('Saved new product with id ' . $product->getId());
     }
 
     /**
@@ -104,6 +104,7 @@ class ProductController extends Controller
         return new JsonResponse(json_encode($products));
     }
 
+
     /**
      * @Route("/product/{id}")
      * @Method({"DELETE"})
@@ -118,4 +119,6 @@ class ProductController extends Controller
         $em->flush();
         return new Response('You ust deleted prudct with id: ' . $id);
     }
+
+
 }
