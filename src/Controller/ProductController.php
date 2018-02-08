@@ -76,19 +76,15 @@ class ProductController extends Controller
 
 
     /**
-     * @Route("/product/{id}")
+     * @Route("/product/{id}", "name=product_update")
      * @Method({"POST"})
+     * @param $id
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
     public function update($id)
     {
         $em = $this->getDoctrine()->getManager();
         $product = $em->getRepository(Product::class)->find($id);
-
-        if (!$product) {
-            throw $this->createNotFoundException(
-                'No product found for id ' . $id
-            );
-        }
 
         $product->setName('New product name!');
         $em->flush();
@@ -99,7 +95,7 @@ class ProductController extends Controller
     }
 
     /**
-     * @Route("product/greater-than-price/{price}")
+     * @Route("product/greater-than-price/{price}", "name=product_gt_p")
      * @Method({"GET"})
      * @param $price
      * @return JsonResponse
@@ -110,18 +106,11 @@ class ProductController extends Controller
             ->getRepository(Product::class)
             ->findAllGreaterThanPrice($price);
 
-        if (!$products) {
-            throw $this->createNotFoundException(
-                'No product found greater than price ' . $price
-            );
-        }
-
         return new JsonResponse(json_encode($products));
     }
 
-
     /**
-     * @Route("/product/{id}")
+     * @Route("/product/{id}", "name=product_delete")
      * @Method({"DELETE"})
      * @param $id
      * @return Response
@@ -134,6 +123,5 @@ class ProductController extends Controller
         $em->flush();
         return new Response('You ust deleted prudct with id: ' . $id);
     }
-
 
 }

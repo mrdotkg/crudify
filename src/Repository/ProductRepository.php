@@ -21,9 +21,6 @@ class ProductRepository extends ServiceEntityRepository
     public function findEverything()
     {
         return $this->createQueryBuilder('p')
-//            ->where('p.something = :value')->setParameter('value', $value)
-//            ->orderBy('p.id', 'ASC')
-            ->setMaxResults(10)
             ->getQuery()
             ->getResult(Query::HYDRATE_ARRAY )
         ;
