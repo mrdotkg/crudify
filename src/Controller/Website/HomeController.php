@@ -6,14 +6,14 @@
  * Time: 10:17 AM
  */
 
-namespace App\Controller;
-
+namespace App\Controller\Website;
 
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
-class HomeController
+class HomeController extends Controller
 {
     /**
      * @Route("/")
@@ -21,7 +21,7 @@ class HomeController
      */
     public function index()
     {
-        return new Response('Home Sweet Home !!!');
+        return $this->render('Product/list.html.twig');
 
     }
 

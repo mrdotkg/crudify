@@ -20,7 +20,7 @@ class ProductRepository extends ServiceEntityRepository
      */
     public function findEverything()
     {
-        return $this->createQueryBuilder()
+        return $this->createQueryBuilder('p')
             ->getQuery()
             ->getResult(Query::HYDRATE_ARRAY );
     }

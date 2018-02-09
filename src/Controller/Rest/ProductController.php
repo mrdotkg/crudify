@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controller\Rest;
 
 use App\Entity\Product;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 class ProductController extends Controller
 {
     /**
-     * @Route("/product", name="product_show_all")
+     * @Route("/rest/product", name="product_show_all")
      * @Method({"GET"})
      * @return JsonResponse
      */
@@ -26,7 +26,7 @@ class ProductController extends Controller
     }
 
     /**
-     * @Route("/product/{id}", name="product_show")
+     * @Route("/rest/product/{id}", name="product_show")
      * @Method({"GET"})
      * @param $id
      * @return JsonResponse
@@ -47,7 +47,7 @@ class ProductController extends Controller
     }
 
     /**
-     * @Route("/product", name="product_create")
+     * @Route("/rest/product", name="product_create")
      * @Method({"PUT"})
      */
     public function create()
@@ -72,7 +72,7 @@ class ProductController extends Controller
 
 
     /**
-     * @Route("/product/{id}", name="product_update")
+     * @Route("/rest/product/{id}", name="product_update")
      * @Method({"POST"})
      * @param $id
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
@@ -106,7 +106,7 @@ class ProductController extends Controller
     }
 
     /**
-     * @Route("/product/{id}", name="product_delete")
+     * @Route("/rest/product/{id}", name="product_delete")
      * @Method({"DELETE"})
      * @param $id
      * @return Response

@@ -1,0 +1,95 @@
+/*------------------------------------------------------------------------------------------*/
+/* align sidebar and main content wrapper after removing top nav
+/*------------------------------------------------------------------------------------------*/
+ul.sidebar-menu {
+    margin-top: 25px;
+}
+.wrapper {
+    margin-top: 25px;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* make jumbotron smaller
+/*------------------------------------------------------------------------------------------*/
+.jumbotron {
+    padding: 1.5em 1.0em;
+    background-color: #f2f2f2;
+}
+.jumbotron > i{
+    padding: 8px;
+    font-size: 20px;
+    float: left;
+    cursor: pointer;
+}
+.jumbotron > h1 > i{
+    margin-right: 0.5em;
+    padding-left: 0.3em;
+}
+.jumbotron > h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 0;
+    display: inline-block;
+    margin-right: 1em !important;
+
+}
+
+.jumbotron > .btn {
+    margin-bottom: 1.3em;
+    opacity: .9;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* match breadcrumb padding to that of the jumbotron
+/*------------------------------------------------------------------------------------------*/
+.breadcrumb {
+    padding: 8px 20px;
+    display: contents;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* Button theme colors update
+/*------------------------------------------------------------------------------------------*/
+.btn-theme01 {
+    background-color: #f9a825;
+}
+.btn-theme02 {
+    background-color: #7e57c2;
+}
+.btn-theme03 {
+    background-color: #2ecc71;
+}
+.btn-theme04 {
+    background-color: #FA2A00;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* give some padding to the content panel whcih comes in .wrapper.row
+/*------------------------------------------------------------------------------------------*/
+
+.content-panel{
+    border-radius: 5px;
+    padding:2em 1em;
+}
+
+.site-min-height {
+    min-height: 700px;
+}
+/*------------------------------------------------------------------------------------------*/
+/* change label colors to our theme colors
+/*------------------------------------------------------------------------------------------*/
+
+
+.label-success {
+    background-color: #2ecc71;
+}
+.label-warning {
+    background-color: #f9a825;
+}
+.label-info {
+    background-color: #7e57c2;
+}
+.label-danger {
+    background-color: #FA2A00;
+}
