@@ -1,14 +1,11 @@
 /*------------------------------------------------------------------------------------------*/
 /* align sidebar and main content wrapper after removing top nav
 /*------------------------------------------------------------------------------------------*/
-ul.sidebar-menu {
+ul.sidebar-menu, .wrapper {
     margin-top: 25px;
 }
-.wrapper {
-    margin-top: 25px;
-}
-/*since I don't like it without style*/
-#sidebar, #main-content{
+
+#sidebar, #main-content {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -23,16 +20,19 @@ ul.sidebar-menu {
     padding: 1.5em 1.0em;
     background-color: #f2f2f2;
 }
-.jumbotron > i{
+
+.jumbotron > i {
     padding: 8px;
     font-size: 20px;
     float: left;
     cursor: pointer;
 }
-.jumbotron > h1 > i{
+
+.jumbotron > h1 > i {
     margin-right: 0.5em;
     padding-left: 0.3em;
 }
+
 .jumbotron > h1 {
     font-size: 2.5em;
     font-weight: 700;
@@ -46,7 +46,6 @@ ul.sidebar-menu {
     margin-bottom: 1.3em;
     opacity: .9;
 }
-
 
 /*------------------------------------------------------------------------------------------*/
 /* match breadcrumb padding to that of the jumbotron
@@ -62,12 +61,15 @@ ul.sidebar-menu {
 .btn-theme01 {
     background-color: #f9a825;
 }
+
 .btn-theme02 {
     background-color: #7e57c2;
 }
+
 .btn-theme03 {
     background-color: #2ecc71;
 }
+
 .btn-theme04 {
     background-color: #FA2A00;
 }
@@ -76,28 +78,61 @@ ul.sidebar-menu {
 /* give some padding to the content panel whcih comes in .wrapper.row
 /*------------------------------------------------------------------------------------------*/
 
-.content-panel{
+.content-panel {
     border-radius: 5px;
-    padding:2em 1em;
+    padding: 2em 1em;
 }
 
 .site-min-height {
     min-height: 700px;
 }
+
 /*------------------------------------------------------------------------------------------*/
 /* change label colors to our theme colors
 /*------------------------------------------------------------------------------------------*/
 
-
 .label-success {
     background-color: #2ecc71;
 }
+
 .label-warning {
     background-color: #f9a825;
 }
+
 .label-info {
     background-color: #7e57c2;
 }
+
 .label-danger {
     background-color: #FA2A00;
 }
+/*------------------------------------------------------------------------------------------*/
+/* brandding
+/*------------------------------------------------------------------------------------------*/
+.brand-logo{
+    font-size: 60px;
+    color: #ffd600;
+}
+.brand-name{
+    letter-spacing: .5em;
+    font-size: 20px;
+    padding-left: 2px;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* didn't line the flashy active hover and focus color and irregular menu text sentence case
+/*------------------------------------------------------------------------------------------*/
+ul.sidebar-menu li a.active,
+ul.sidebar-menu li a:hover,
+ul.sidebar-menu li a:focus,
+ul.sidebar-menu li ul li a.active,
+ul.sidebar-menu li ul li a:hover,
+ul.sidebar-menu li ul li a:focus
+{
+    background: none;
+    color: #fff;
+}
+ul.sidebar-menu, .breadcrumb {
+    text-transform: Uppercase;
+}
+

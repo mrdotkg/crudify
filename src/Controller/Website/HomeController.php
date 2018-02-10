@@ -21,7 +21,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return $this->render('Product/list.html.twig');
+        return $this->render('Product/index.html.twig');
 
     }
 
