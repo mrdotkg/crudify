@@ -48,11 +48,14 @@ ul.sidebar-menu, .wrapper {
 }
 
 /*------------------------------------------------------------------------------------------*/
-/* match breadcrumb padding to that of the jumbotron
+/* match breadcrumb padding and bg to that of the jumbotron
 /*------------------------------------------------------------------------------------------*/
 .breadcrumb {
     padding: 8px 20px;
     display: contents;
+}
+.breadcrumb, .jumbotron{
+    background: none;
 }
 
 /*------------------------------------------------------------------------------------------*/
@@ -136,3 +139,20 @@ ul.sidebar-menu, .breadcrumb {
     text-transform: Uppercase;
 }
 
+/*------------------------------------------------------------------------------------------*/
+/* because we must have this
+/*------------------------------------------------------------------------------------------*/
+.dimmer {
+    background: url("../img/pattern.png");
+    background-size: cover;
+    background-position: center;
+    /*background: linear-gradient(135deg, rgba(45, 53, 61, .79) 0, rgba(45, 53, 61, .5) 100%);*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c92d353d', endColorstr='#802d353d', GradientType=1);*/
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
