@@ -143,16 +143,33 @@ ul.sidebar-menu, .breadcrumb {
 /* because we must have this
 /*------------------------------------------------------------------------------------------*/
 .dimmer {
-    background: url("../img/pattern.png");
+    /*background: url("../img/pattern.png");*/
+    background-color: #DFF0D8;
     background-size: cover;
     background-position: center;
     /*background: linear-gradient(135deg, rgba(45, 53, 61, .79) 0, rgba(45, 53, 61, .5) 100%);*/
     /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c92d353d', endColorstr='#802d353d', GradientType=1);*/
-    opacity: 0.5;
+    opacity: 0.2;
+    z-index: -1;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
 
+}
+/*------------------------------------------------------------------------------------------*/
+/* match footer with theme color
+/*------------------------------------------------------------------------------------------*/
+.site-footer {
+    background: none;
+    color: #424a5d;
+    padding: 10px 0;
+    bottom: 0;
+    margin-bottom: 0;
+    position: fixed;
+    left: 71px;
+}
+.site-footer div a {
+    color: #ffd600;
 }
