@@ -1,11 +1,8 @@
 /*------------------------------------------------------------------------------------------*/
 /* align sidebar and main content wrapper after removing top nav
 /*------------------------------------------------------------------------------------------*/
-ul.sidebar-menu{
+ul.sidebar-menu, .wrapper {
     margin-top: 25px;
-}
-.wrapper {
-    margin-top: 0px;
 }
 #sidebar, #main-content {
     -webkit-transition: all 0.3s ease;
@@ -19,7 +16,7 @@ ul.sidebar-menu{
 /* make jumbotron smaller
 /*------------------------------------------------------------------------------------------*/
 .jumbotron {
-    padding: 1.5em 1.0em;
+    padding: 0em;
     background-color: #f2f2f2;
 }
 
@@ -27,7 +24,6 @@ ul.sidebar-menu{
     padding: 8px;
     font-size: 20px;
     float: left;
-    cursor: pointer;
 }
 
 .content-title >h1 > i {
@@ -37,7 +33,7 @@ ul.sidebar-menu{
 }
 
 .content-title > h1 {
-    font-size: 2.5em;
+    font-size: 1.5em;
     font-weight: 700;
     margin: 0;
     display: inline-block;
@@ -61,18 +57,29 @@ ul.sidebar-menu{
 .content-action > .btn, .content-action i{
     font-weight: bolder;
 }
+
+/*------------------------------------------------------------------------------------------*/
+/* Wooohooo!!! Jan 2017 onwards, position:sticky is accepted now from all browsers
+/*------------------------------------------------------------------------------------------*/
+.jumbotron{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    background: #f2f2f2;
+}
 /*------------------------------------------------------------------------------------------*/
 /* match breadcrumb padding and bg to that of the jumbotron
 /*------------------------------------------------------------------------------------------*/
 .breadcrumb {
     display: inline-block;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+    padding: 0px 4px;
 }
 .breadcrumb, .jumbotron{
     background: none;
 }
-.page-nav i{
-    padding: 10px;
+.content-title i{
     cursor: pointer;
 }
 
@@ -123,20 +130,14 @@ ul.sidebar-menu, .jumbotron, .jumbotron .btn{
 /* because we must have this
 /*------------------------------------------------------------------------------------------*/
 .dimmer {
-    /*background: url("../img/pattern.png");*/
-    background-color: rgba(223, 240, 216, 0.5);
-    background-size: cover;
-    background-position: center;
-    /*background: linear-gradient(135deg, rgba(45, 53, 61, .79) 0, rgba(45, 53, 61, .5) 100%);*/
-    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c92d353d', endColorstr='#802d353d', GradientType=1);*/
     z-index: -1;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-
 }
+
 /*------------------------------------------------------------------------------------------*/
 /* match footer with theme color
 /*------------------------------------------------------------------------------------------*/
@@ -152,6 +153,10 @@ ul.sidebar-menu, .jumbotron, .jumbotron .btn{
 .site-footer div a {
     color: #DFF0D8;
 }
+/*------------------------------------------------------------------------------------------*/
+/* lets hide our website from lazy mobile device users
+/*------------------------------------------------------------------------------------------*/
+
 @media (max-width: 991px) {
     .mobile-only {
         display: block !important;
@@ -176,41 +181,4 @@ ul.sidebar-menu, .jumbotron, .jumbotron .btn{
 /*------------------------------------------------------------------------------------------*/
 table button{
     background: none;
-}
-
-.page-nav{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-    z-index: 3;
-    background: rgba(223, 240, 216, 0.5);
-
-}
-/*.content-action{*/
-    /*position: -webkit-sticky;*/
-    /*position: sticky;*/
-    /*top: 0px;*/
-    /*z-index: 3;*/
-/*}*/
-
-/*------------------------------------------------------------------------------------------*/
-/* some media queries for the fool page heading
-/*------------------------------------------------------------------------------------------*/
-
-@include media-breakpoint-up(sm) {
-    .content-title > h1 {
-        font-size: 1.5em;
-    }
-}
-
-@include media-breakpoint-up(md) {
-    .content-title > h1 {
-        font-size: 2em;
-    }
-}
-
-@include media-breakpoint-up(lg) {
-    .content-title > h1 {
-        font-size: 2.5em;
-    }
 }

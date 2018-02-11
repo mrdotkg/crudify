@@ -29,7 +29,6 @@
 
 <body>
 <section id="container">
-    <div class="dimmer"></div>
 
     <!-- **********************************************************************************************************************************************************
     MAIN SIDEBAR MENU
@@ -90,21 +89,11 @@
         <section class="wrapper site-min-height">
             {#wrapper header#}
 
-            {# breadcrumb #}
-            <div class="page-nav">
-                <i class="fa fa-bars"></i>
-                <ol class=" breadcrumb sticky">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Items</a></li>
-                    <li class="breadcrumb-item active">Create</li>
-                </ol>
-            </div>
-
             <div class="jumbotron">
                 {# page title and actions #}
                 <div class="content-title-action row mt">
                     <div class="content-title col-md-4 title">
-                        <h1><i class="fa fa-file-text"></i>Create Item</h1>
+                        <h1><i class="fa fa-bars"></i>Create Item</h1>
                     </div>
                     <div class="content-action col-md-8">
 
@@ -117,12 +106,21 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+            {# breadcrumb #}
+            <div class="page-nav">
+                <i class="fa fa-anchor"> </i>
+                <ol class=" breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Items</a></li>
+                    <li class="breadcrumb-item active">Create</li>
+                </ol>
+            </div>
+
 
             {#wrapper content#}
             <!-- BASIC FORM ELELEMNTS -->
-            <div class="row mt">
+            <div class="row">
                 <div class="col-lg-12">
                     <div class="content-panel">
                         <form class="form-horizontal style-form" method="get">
@@ -267,7 +265,7 @@
 <script src="{{ asset('assets/js/jquery-ui-1.9.2.custom.min.js') }}"></script>
 <script src="{{ asset('assets/js/jquery.ui.touch-punch.min.js') }}"></script>
 <script class="include" type="text/javascript" src="{{ asset('assets/js/jquery.dcjqaccordion.2.7.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.scrollTo.min.js') }}"></script>
+{#<script src="{{ asset('assets/js/jquery.scrollTo.min.js') }}"></script>#}
 
 
 <!--common script for all pages-->
