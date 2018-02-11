@@ -24,6 +24,7 @@ class HomeController extends Controller
         return $this->render('Product/index.html.twig');
 
     }
+
     /**
      * @Route("/create")
      * @return Response
@@ -31,6 +32,26 @@ class HomeController extends Controller
     public function create()
     {
         return $this->render('Product/create.html.twig');
+
+    }
+
+    /**
+     * @Route("/read")
+     * @return Response
+     */
+    public function read()
+    {
+        return $this->render('Product/read.html.twig');
+
+    }
+
+    /**
+     * @Route("/update")
+     * @return Response
+     */
+    public function update()
+    {
+        return $this->render('Product/update.html.twig');
 
     }
 

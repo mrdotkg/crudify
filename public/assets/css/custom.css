@@ -39,7 +39,6 @@ ul.sidebar-menu, .wrapper {
     font-weight: 700;
     margin: 0;
     display: inline-block;
-    margin-right: 1em !important;
 
 }
 .jumbotron > .content-title-action {
@@ -72,25 +71,6 @@ ul.sidebar-menu, .wrapper {
 }
 
 /*------------------------------------------------------------------------------------------*/
-/* Button theme colors update
-/*------------------------------------------------------------------------------------------*/
-.btn-theme01 {
-    background-color: #f9a825;
-}
-
-.btn-theme02 {
-    background-color: #7e57c2;
-}
-
-.btn-theme03 {
-    background-color: #2ecc71;
-}
-
-.btn-theme04 {
-    background-color: #FA2A00;
-}
-
-/*------------------------------------------------------------------------------------------*/
 /* give some padding to the content panel whcih comes in .wrapper.row
 /*------------------------------------------------------------------------------------------*/
 
@@ -104,30 +84,11 @@ ul.sidebar-menu, .wrapper {
 }
 
 /*------------------------------------------------------------------------------------------*/
-/* change label colors to our theme colors
-/*------------------------------------------------------------------------------------------*/
-
-.label-success {
-    background-color: #2ecc71;
-}
-
-.label-warning {
-    background-color: #f9a825;
-}
-
-.label-info {
-    background-color: #7e57c2;
-}
-
-.label-danger {
-    background-color: #FA2A00;
-}
-/*------------------------------------------------------------------------------------------*/
-/* brandding
+/* branding
 /*------------------------------------------------------------------------------------------*/
 .brand-logo{
     font-size: 60px;
-    color: #ffd600;
+    color: #DFF0D8;
 }
 .brand-name{
     letter-spacing: .5em;
@@ -184,7 +145,7 @@ ul.sidebar-menu, .jumbotron, .jumbotron .btn{
     left: 71px;
 }
 .site-footer div a {
-    color: #ffd600;
+    color: #DFF0D8;
 }
 @media (max-width: 991px) {
     .mobile-only {
@@ -204,10 +165,4 @@ ul.sidebar-menu, .jumbotron, .jumbotron .btn{
     height: 100%;
     background-color: black;
     z-index: 9999
-}
-/*------------------------------------------------------------------------------------------*/
-/* lets make the buttons more acceptable to the theme by removing their theme
-/*------------------------------------------------------------------------------------------*/
-.btn{
-    background: none;
 }
