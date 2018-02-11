@@ -42,7 +42,7 @@
 
                 <p class="centered">
                     <i class="fa fa-database brand-logo"></i>
-                <h5 class="centered brand-name">CRUDI</h5>
+                    <h5 class="centered brand-name">CRUDI</h5>
                 </p>
 
                 <li class="mt">
@@ -55,7 +55,7 @@
                 <li class="sub-menu">
                     <a class="active" href="javascript:;">
                         <i class="fa fa-clipboard"></i>
-                        <span>Products</span>
+                        <span>Items</span>
                     </a>
                     <ul class="sub">
                         <li><a href="#"><i class="fa fa-plus"></i>Create</a></li>
@@ -73,7 +73,7 @@
             <footer class="site-footer">
                 <div class=" centered">
                     <a target="_blank" href="https://github.com/measdot">
-                        <i class="fa fa-heart"></i> + <i class="fa fa-coffee"></i> = <i class="fa fa-database"></i>
+                        <i class="fa fa-coffee"></i> + <i class="fa fa-heart"></i> = <i class="fa fa-database"></i>
                     </a>
                 </div>
             </footer>
@@ -90,20 +90,31 @@
         <section class="wrapper site-min-height">
             {#wrapper header header#}
             <div class=" jumbotron">
+
                 {# breadcrumb #}
                 <i class="fa fa-bars"></i>
                 <ol style="display: inline-block;" class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Library</a></li>
-                    <li class="breadcrumb-item active">Data</li>
+                    <li class="breadcrumb-item"><a href="#">Items</a></li>
+                    <li class="breadcrumb-item active">Index</li>
                 </ol>
-                <br>
-                <br>
 
                 {# page title and actions #}
-                <h1><i class="fa fa-file-text"></i>Products</h1>
-                <button type="button" class="btn btn-theme03 btn-md"><i class="fa fa-plus"></i> Add New</button>
-                <button type="button" class="btn btn-theme04 btn-md"><i class="fa fa-trash-o"></i> Bulk Delete</button>
+                <div class="content-title-action row mt ">
+                    <div class="content-title col-md-4 title">
+                        <h1><i class="fa fa-file-text"></i>Add Items</h1>
+                    </div>
+                    <div class="content-action col-md-8">
+                        <button type="button" class="btn btn-md"><i class="fa fa-plus"></i> Add New</button>
+                        <button type="button" class="btn btn-md"><i class="fa fa-trash-o"></i> Bulk Delete</button>
+                        <div class="input-group">
+                            <input type="text" class="form-control input-normal"
+                                   placeholder="search to copy values from matching items">
+                            <span class="input-group-addon"><i style="font-size: 18px" class="fa fa-eye"></i></span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             {#wrapper content#}

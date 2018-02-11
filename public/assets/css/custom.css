@@ -28,12 +28,13 @@ ul.sidebar-menu, .wrapper {
     cursor: pointer;
 }
 
-.jumbotron > h1 > i {
+.content-title >h1 > i {
     margin-right: 0.5em;
     padding-left: 0.3em;
+    padding-top: 5px;
 }
 
-.jumbotron > h1 {
+.content-title > h1 {
     font-size: 2.5em;
     font-weight: 700;
     margin: 0;
@@ -41,12 +42,19 @@ ul.sidebar-menu, .wrapper {
     margin-right: 1em !important;
 
 }
-
-.jumbotron > .btn {
-    margin-bottom: 1.3em;
-    opacity: .9;
+.jumbotron > .content-title-action {
+    width: 100%;
+    vertical-align: middle;
+    padding: 5px;
 }
-
+.content-action{
+    padding: 3px;
+    display: inline-block;
+}
+.content-action > .input-group{
+    float: right;
+    width: inherit;
+}
 /*------------------------------------------------------------------------------------------*/
 /* match breadcrumb padding and bg to that of the jumbotron
 /*------------------------------------------------------------------------------------------*/

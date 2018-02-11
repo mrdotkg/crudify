@@ -24,5 +24,14 @@ class HomeController extends Controller
         return $this->render('Product/index.html.twig');
 
     }
+    /**
+     * @Route("/create")
+     * @return Response
+     */
+    public function create()
+    {
+        return $this->render('Product/create.html.twig');
+
+    }
 
 }
