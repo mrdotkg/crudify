@@ -88,24 +88,31 @@
     <!--main content start-->
     <section id="main-content">
         <section class="wrapper site-min-height">
-            {#wrapper header header#}
-            <div class=" jumbotron">
-                {# breadcrumb #}
+            {#wrapper header#}
+
+            {# breadcrumb #}
+            <div class="page-nav">
                 <i class="fa fa-bars"></i>
-                <ol style="display: inline-block;" class="breadcrumb">
+                <ol class=" breadcrumb sticky">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Items</a></li>
                     <li class="breadcrumb-item active">Create</li>
                 </ol>
+            </div>
 
+            <div class="jumbotron">
                 {# page title and actions #}
-                <div class="content-title-action row mt ">
+                <div class="content-title-action row mt">
                     <div class="content-title col-md-4 title">
                         <h1><i class="fa fa-file-text"></i>Create Item</h1>
                     </div>
                     <div class="content-action col-md-8">
+
+                        <button type="button" class="btn btn-md"><i class="fa fa-plus"></i> Add New</button>
+                        <button type="button" class="btn btn-md"><i class="fa fa-trash-o"></i> Bulk Delete</button>
+
                         <div class="input-group">
-                            <input type="text" class="form-control input-normal" placeholder="search to copy values from matching items">
+                            <input type="text" class="form-control input-normal" placeholder="search to copy a matching item">
                             <span class="input-group-addon"><i style="font-size: 18px" class="fa fa-eye"></i></span>
                         </div>
                     </div>

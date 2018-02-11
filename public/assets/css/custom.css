@@ -1,10 +1,12 @@
 /*------------------------------------------------------------------------------------------*/
 /* align sidebar and main content wrapper after removing top nav
 /*------------------------------------------------------------------------------------------*/
-ul.sidebar-menu, .wrapper {
+ul.sidebar-menu{
     margin-top: 25px;
 }
-
+.wrapper {
+    margin-top: 0px;
+}
 #sidebar, #main-content {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -49,12 +51,12 @@ ul.sidebar-menu, .wrapper {
 .content-action {
     padding: 3px;
     display: inline-block;
-    text-align: right;
+    /*text-align: right;*/
     font-weight: 500;
 }
 .content-action > .input-group{
     float: right;
-    width: inherit;
+    width: 50%;
 }
 .content-action > .btn, .content-action i{
     font-weight: bolder;
@@ -63,11 +65,15 @@ ul.sidebar-menu, .wrapper {
 /* match breadcrumb padding and bg to that of the jumbotron
 /*------------------------------------------------------------------------------------------*/
 .breadcrumb {
-    padding: 8px 20px;
-    display: contents;
+    display: inline-block;
+    margin-bottom: 0;
 }
 .breadcrumb, .jumbotron{
     background: none;
+}
+.page-nav i{
+    padding: 10px;
+    cursor: pointer;
 }
 
 /*------------------------------------------------------------------------------------------*/
@@ -118,12 +124,11 @@ ul.sidebar-menu, .jumbotron, .jumbotron .btn{
 /*------------------------------------------------------------------------------------------*/
 .dimmer {
     /*background: url("../img/pattern.png");*/
-    background-color: #DFF0D8;
+    background-color: rgba(223, 240, 216, 0.5);
     background-size: cover;
     background-position: center;
     /*background: linear-gradient(135deg, rgba(45, 53, 61, .79) 0, rgba(45, 53, 61, .5) 100%);*/
     /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c92d353d', endColorstr='#802d353d', GradientType=1);*/
-    opacity: 0.2;
     z-index: -1;
     position: absolute;
     left: 0;
@@ -167,8 +172,45 @@ ul.sidebar-menu, .jumbotron, .jumbotron .btn{
     z-index: 9999
 }
 /*------------------------------------------------------------------------------------------*/
-/* lets make the buttons more acceptable to the theme by removing their theme
+/* lets make the buttons more acceptable to the theme by removing their background
 /*------------------------------------------------------------------------------------------*/
 table button{
     background: none;
+}
+
+.page-nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    background: rgba(223, 240, 216, 0.5);
+
+}
+/*.content-action{*/
+    /*position: -webkit-sticky;*/
+    /*position: sticky;*/
+    /*top: 0px;*/
+    /*z-index: 3;*/
+/*}*/
+
+/*------------------------------------------------------------------------------------------*/
+/* some media queries for the fool page heading
+/*------------------------------------------------------------------------------------------*/
+
+@include media-breakpoint-up(sm) {
+    .content-title > h1 {
+        font-size: 1.5em;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .content-title > h1 {
+        font-size: 2em;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .content-title > h1 {
+        font-size: 2.5em;
+    }
 }
