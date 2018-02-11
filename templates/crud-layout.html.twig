@@ -7,12 +7,12 @@
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>Crudify -  Admin </title>
+    <title>Crudify - Admin </title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
     <!--external css-->
-    <link href="{{ asset('assets/font-awesome/css/font-awesome.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/font-awesome/css/font-awesome.css') }}" rel="stylesheet"/>
 
     <!-- Custom styles for this template -->
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
@@ -28,7 +28,7 @@
 </head>
 
 <body>
-<section id="container" >
+<section id="container">
     <div class="dimmer"></div>
 
     <!-- **********************************************************************************************************************************************************
@@ -36,13 +36,13 @@
     *********************************************************************************************************************************************************** -->
     <!--sidebar start-->
     <aside>
-        <div id="sidebar"  class="nav-collapse ">
+        <div id="sidebar" class="nav-collapse ">
             <!-- sidebar menu start-->
             <ul class="sidebar-menu" id="nav-accordion">
 
                 <p class="centered">
                     <i class="fa fa-database brand-logo"></i>
-                    <h5 class="centered brand-name">CRUDI</h5>
+                <h5 class="centered brand-name">CRUDI</h5>
                 </p>
 
                 <li class="mt">
@@ -53,7 +53,7 @@
                 </li>
 
                 <li class="sub-menu">
-                    <a class="active" href="javascript:;" >
+                    <a class="active" href="javascript:;">
                         <i class="fa fa-clipboard"></i>
                         <span>Products</span>
                     </a>
@@ -124,7 +124,7 @@
                             <tr>
                                 <td><a href="basic_table.html#">Company Ltd</a></td>
                                 <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                <td>12000.00$ </td>
+                                <td>12000.00$</td>
                                 <td><span class="label label-info label-mini">Due</span></td>
                                 <td>
                                     <button class="btn btn-theme02 btn-xs"><i class="fa fa-eye"></i></button>
@@ -139,7 +139,7 @@
                                     </a>
                                 </td>
                                 <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                <td>17900.00$ </td>
+                                <td>17900.00$</td>
                                 <td><span class="label label-warning label-mini">Due</span></td>
                                 <td>
                                     <button class="btn btn-theme02 btn-xs"><i class="fa fa-eye"></i></button>
@@ -154,7 +154,7 @@
                                     </a>
                                 </td>
                                 <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                <td>14400.00$ </td>
+                                <td>14400.00$</td>
                                 <td><span class="label label-success label-mini">Paid</span></td>
                                 <td>
                                     <button class="btn btn-theme02 btn-xs"><i class="fa fa-eye"></i></button>
@@ -169,7 +169,7 @@
                                     </a>
                                 </td>
                                 <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                <td>22000.50$ </td>
+                                <td>22000.50$</td>
                                 <td><span class="label label-success label-mini">Paid</span></td>
                                 <td>
                                     <button class="btn btn-theme02 btn-xs"><i class="fa fa-eye"></i></button>
@@ -180,7 +180,7 @@
                             <tr>
                                 <td><a href="basic_table.html#">Total Ltd</a></td>
                                 <td class="hidden-phone">Lorem Ipsum dolor</td>
-                                <td>12120.00$ </td>
+                                <td>12120.00$</td>
                                 <td><span class="label label-warning label-mini">Due</span></td>
                                 <td>
                                     <button class="btn btn-theme02 btn-xs"><i class="fa fa-eye"></i></button>
@@ -193,11 +193,14 @@
                     </div><!-- /content-panel -->
                 </div><!-- /col-md-12 -->
             </div><!-- /row -->
-        </section><! --/wrapper -->
+        </section>
+        <! --/wrapper -->
     </section><!-- /MAIN CONTENT -->
     <!--main content end-->
 </section>
-
+<div style="display: none" class="mobile-only">
+    <h1 class="center-block">Very soon you will see a mobile only version of the site.</h1>
+</div>
 <!-- js placed at the end of the document so the pages load faster -->
 <script src="{{ asset('assets/js/jquery.js') }}"></script>
 <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
@@ -216,9 +219,9 @@
 <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#example').DataTable();
-    } );
+    });
 </script>
 
 </body>
