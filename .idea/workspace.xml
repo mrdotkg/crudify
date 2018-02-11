@@ -39,14 +39,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="crud-layout.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="crud-layout.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../crudi/templates/crud-layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="142">
-              <caret line="104" column="65" lean-forward="false" selection-start-line="104" selection-start-column="65" selection-end-line="104" selection-end-column="65" />
-              <folding>
-                <element signature="n#aside#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+              <caret line="60" column="44" lean-forward="false" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../crudi/templates/Product/create.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../crudi/src/Controller/Website/HomeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="89">
+              <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,8 +90,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>to do</find>
-      <find>stat</find>
       <find>advance</find>
       <find>fa fa-check</find>
       <find>btn-success</find>
@@ -102,6 +118,8 @@
       <find>btn-theme01</find>
       <find>upperca</find>
       <find>add</find>
+      <find>create</find>
+      <find>index</find>
     </findStrings>
     <replaceStrings>
       <replace>@Route</replace>
@@ -144,10 +162,10 @@
         <option value="$PROJECT_DIR$/../crudi/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/../crudi/templates/Product/list.html.twig" />
         <option value="$PROJECT_DIR$/../crudi/public/assets/js/common-scripts.js" />
-        <option value="$PROJECT_DIR$/../crudi/src/Controller/Website/HomeController.php" />
-        <option value="$PROJECT_DIR$/../crudi/templates/Product/create.html.twig" />
         <option value="$PROJECT_DIR$/../crudi/public/assets/css/custom.css" />
         <option value="$PROJECT_DIR$/../crudi/templates/crud-layout.html.twig" />
+        <option value="$PROJECT_DIR$/../crudi/templates/Product/create.html.twig" />
+        <option value="$PROJECT_DIR$/../crudi/src/Controller/Website/HomeController.php" />
       </list>
     </option>
   </component>
@@ -367,7 +385,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57403000" />
+    <option name="totallyTimeSpent" value="57604000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -744,14 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../crudi/src/Controller/Website/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../crudi/templates/Product/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -792,14 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../crudi/templates/Product/create.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="40" column="41" lean-forward="true" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../crudi/public/assets/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -811,10 +813,24 @@
     <entry file="file://$PROJECT_DIR$/../crudi/templates/crud-layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
-          <caret line="104" column="65" lean-forward="false" selection-start-line="104" selection-start-column="65" selection-end-line="104" selection-end-column="65" />
-          <folding>
-            <element signature="n#aside#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+          <caret line="60" column="44" lean-forward="false" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../crudi/templates/Product/create.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../crudi/src/Controller/Website/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
