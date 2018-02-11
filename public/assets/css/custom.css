@@ -143,7 +143,7 @@ ul.sidebar-menu li ul li a:focus
     background: none;
     color: #fff;
 }
-ul.sidebar-menu, .breadcrumb {
+ul.sidebar-menu, .jumbotron, .jumbotron .btn{
     text-transform: Uppercase;
 }
 
@@ -199,4 +199,10 @@ ul.sidebar-menu, .breadcrumb {
     height: 100%;
     background-color: black;
     z-index: 9999
+}
+/*------------------------------------------------------------------------------------------*/
+/* lets make the buttons more acceptable to the theme by removing their theme
+/*------------------------------------------------------------------------------------------*/
+.btn{
+    background: none;
 }
