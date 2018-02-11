@@ -166,3 +166,9 @@ ul.sidebar-menu, .jumbotron, .jumbotron .btn{
     background-color: black;
     z-index: 9999
 }
+/*------------------------------------------------------------------------------------------*/
+/* lets make the buttons more acceptable to the theme by removing their theme
+/*------------------------------------------------------------------------------------------*/
+table button{
+    background: none;
+}
