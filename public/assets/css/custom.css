@@ -47,13 +47,18 @@ ul.sidebar-menu, .wrapper {
     vertical-align: middle;
     padding: 5px;
 }
-.content-action{
+.content-action {
     padding: 3px;
     display: inline-block;
+    text-align: right;
+    font-weight: 500;
 }
 .content-action > .input-group{
     float: right;
     width: inherit;
+}
+.content-action > .btn, .content-action i{
+    font-weight: bolder;
 }
 /*------------------------------------------------------------------------------------------*/
 /* match breadcrumb padding and bg to that of the jumbotron
