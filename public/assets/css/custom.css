@@ -29,6 +29,7 @@ ul.sidebar-menu, .wrapper {
     margin-right: 0.5em;
     padding-left: 0.3em;
     padding-top: 5px;
+    color: #424a5d;
 }
 
 .content-title > h1 {
@@ -179,4 +180,16 @@ ul.sidebar-menu, .jumbotron, .jumbotron .btn{
 /*------------------------------------------------------------------------------------------*/
 table button{
     background: none;
+}
+/*------------------------------------------------------------------------------------------*/
+/* found the checkbox and radio buttons not aligned to label
+/*------------------------------------------------------------------------------------------*/
+input[type=checkbox],input[type=radio]  {
+    margin-top: 3px;
+}
+/*------------------------------------------------------------------------------------------*/
+/* form labels look very distanced to the input element
+/*------------------------------------------------------------------------------------------*/
+.form-horizontal .control-label{
+    text-align: right;
 }
