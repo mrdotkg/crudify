@@ -48,7 +48,7 @@ var Script = function () {
         $(window).on('resize', responsiveView);
     });
 
-    $('.content-title').click(function () {
+    $('.content-title h1').click(function () {
         if ( ! $("#container").hasClass("sidebar-closed")) {
             $('#main-content').css({
                 'margin-left': '0px'

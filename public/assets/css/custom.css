@@ -77,7 +77,7 @@ ul.sidebar-menu, .wrapper {
     padding: 0px 4px;
     background: #f2f2f2;
 }
-.content-title {
+.content-title h1 {
     cursor: pointer;
 }
 
